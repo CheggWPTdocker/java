@@ -1,4 +1,5 @@
 FROM cheggwpt/alpine:3.4
+MAINTAINER jgilley@chegg.com
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
