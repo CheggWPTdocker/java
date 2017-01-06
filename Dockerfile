@@ -1,4 +1,4 @@
-FROM cheggwpt/alpine:3.4
+FROM cheggwpt/alpine:3.5
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
