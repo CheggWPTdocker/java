@@ -1,4 +1,4 @@
-FROM cheggwpt/alpine:3.5
+FROM cheggwpt/alpine:3.4
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
@@ -21,6 +21,5 @@ ENV JAVA_ALPINE_VERSION 8.111.14-r0
 # BASICS - java 
 RUN	apk --update --no-cache add \
 	--virtual .java_package openjdk8="$JAVA_ALPINE_VERSION" && \
-	[ "$JAVA_HOME" = "$(docker-java-home)" ] && \
-	update-ca-certificates && \
+    update-ca-certificates && \
 	rm -rf /var/cache/apk/* 
